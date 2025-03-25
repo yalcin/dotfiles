@@ -1,0 +1,35 @@
+[repository]
+repository = "/mnt/backup/rustic/home/"
+password-file = "/home/yalcin/.rustic_p.txt"
+
+no-cache = true
+
+[backup]
+git-ignore = true
+
+[[backup.snapshots]]
+sources = ["/home"]
+globs = [
+  "!/home/**/.cache",
+  "!/home/**/.local/share/Trash",
+  "!/home/**/.local/state",
+  "!/home/**/.local/share/flatpak",
+  "!/home/**/.local/share/Steam",
+  "!/home/**/.npm",
+  "!/home/**/.cargo/registry",
+  "!/home/**/.rustup/downloads",
+  "!/home/**/Downloads",
+  "!/home/**/.asdf/installs",
+  "!/home/**/.asdf/shims",
+  "!/home/**/go",
+  "!/home/**/temp",
+  "!/home/**/.mozilla",
+  "!/home/**/.local/share/nvim",
+]
+
+[forget]
+keep-hourly = 6
+keep-daily = 30
+keep-weekly = 12
+keep-monthly = 12
+keep-yearly = 2

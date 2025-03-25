@@ -1,0 +1,7 @@
+[Unit]
+Description=Rustic user-level backup service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/rustic-backup.sh
+

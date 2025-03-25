@@ -1,0 +1,9 @@
+[Unit]
+Description=Her 4 saatte bir Rustic yedekleme
+
+[Timer]
+OnUnitActiveSec=4h
+Persistent=true
+
+[Install]
+WantedBy=default.target
