@@ -129,6 +129,7 @@ unset key
 # }}} End configuration added by Zim install
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-export PATH="~/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 eval "$(zellij setup --generate-auto-start zsh)"
-source $PWD/.config/op/plugins.sh
+source $HOME/.config/op/plugins.sh

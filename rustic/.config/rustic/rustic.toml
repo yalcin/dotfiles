@@ -1,3 +1,7 @@
+[global]
+log-file = "/home/yalcin/.var/log/rustic.log"
+log-level = "info"
+
 [repository]
 repository = "/mnt/backup/rustic/home/"
 password-file = "/home/yalcin/.rustic_p.txt"
@@ -11,20 +15,21 @@ git-ignore = true
 sources = ["/home"]
 globs = [
   "!/home/**/.cache",
-  "!/home/**/.local/share/Trash",
+  "!/home/**/.local/share",
   "!/home/**/.local/state",
-  "!/home/**/.local/share/flatpak",
-  "!/home/**/.local/share/Steam",
   "!/home/**/.npm",
   "!/home/**/.cargo/registry",
+  "!/home/**/.cargo/git",
+  "!/home/**/.rustup/update-hashes",
+  "!/home/**/.rustup/toolchains",
+  "!/home/**/.rustup/tmp",
   "!/home/**/.rustup/downloads",
   "!/home/**/Downloads",
   "!/home/**/.asdf/installs",
   "!/home/**/.asdf/shims",
   "!/home/**/go",
   "!/home/**/temp",
-  "!/home/**/.mozilla",
-  "!/home/**/.local/share/nvim",
+  "!/home/**/.mozilla"
 ]
 
 [forget]

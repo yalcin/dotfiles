@@ -3,5 +3,5 @@ Description=Rustic user-level backup service
 
 [Service]
 Type=oneshot
-ExecStart=%h/.local/bin/rustic-backup.sh
-
+Environment=SCRIPT_PATH=%h/.local/bin/rustic-backup.sh
+ExecStart=/bin/bash -c "$SCRIPT_PATH"
