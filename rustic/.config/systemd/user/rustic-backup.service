@@ -4,4 +4,5 @@ Description=Rustic user-level backup service
 [Service]
 Type=oneshot
 Environment=SCRIPT_PATH=%h/.local/bin/rustic-backup.sh
+Environment=PATH=%h/.cargo/bin:/usr/local/bin:/usr/bin:/bin
 ExecStart=/bin/bash -c "$SCRIPT_PATH"
