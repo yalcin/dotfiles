@@ -3,7 +3,7 @@ Description=Her 4 saatte bir Rustic yedekleme
 
 [Timer]
 OnBootSec=5min
-OnUnitActiveSec=4h
+OnUnitActiveSec=8h
 Persistent=true
 
 [Install]

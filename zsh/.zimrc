@@ -54,5 +54,6 @@ zmodule zsh-users/zsh-autosuggestions
 #zmodule zdharma-continuum/fast-syntax-highlighting
 #zmodule zimfw/asdf
 zmodule Aloxaf/fzf-tab
+zmodule exa
 # }}} End configuration added by Zim install
 

@@ -18,6 +18,7 @@ globs = [
   "!/home/**/.local/share",
   "!/home/**/.local/state",
   "!/home/**/.npm",
+  "!/home/**/.yarn",
   "!/home/**/.cargo/registry",
   "!/home/**/.cargo/git",
   "!/home/**/.rustup/update-hashes",
@@ -29,7 +30,11 @@ globs = [
   "!/home/**/.asdf/shims",
   "!/home/**/go",
   "!/home/**/temp",
-  "!/home/**/.mozilla"
+  "!/home/**/.mozilla",
+  "!/home/**/.ghcup",
+  "!/home/**/dotnet",
+  "!/home/**/Games",
+  "!/home/**/.java",
 ]
 
 [forget]
