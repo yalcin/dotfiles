@@ -134,5 +134,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH="$PATH:/opt/miniconda3/bin"
 eval "$(zellij setup --generate-auto-start zsh)"
-source $HOME/.config/op/plugins.sh
+#source $HOME/.config/op/plugins.sh
 alias ls='eza --group-directories-first --icons'
