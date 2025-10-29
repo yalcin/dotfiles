@@ -136,3 +136,5 @@ export PATH="$PATH:/opt/miniconda3/bin"
 eval "$(zellij setup --generate-auto-start zsh)"
 #source $HOME/.config/op/plugins.sh
 alias ls='eza --group-directories-first --icons'
+
+source /home/yalcin/.config/broot/launcher/bash/br

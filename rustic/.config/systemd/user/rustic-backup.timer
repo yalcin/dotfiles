@@ -1,5 +1,5 @@
 [Unit]
-Description=Her 4 saatte bir Rustic yedekleme
+Description=Her 8 saatte bir Rustic yedekleme
 
 [Timer]
 OnBootSec=5min

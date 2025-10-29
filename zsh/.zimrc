@@ -28,7 +28,8 @@ zmodule duration-info
 # Exposes git repository status information to prompts, used by asciiship.
 zmodule git-info
 
-zmodule spaceship-prompt/spaceship-prompt --name spaceship --no-submodules
+#zmodule spaceship-prompt/spaceship-prompt --name spaceship --no-submodules
+zmodule joke/zim-starship
 
 #
 # Completion
