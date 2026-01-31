@@ -3,43 +3,48 @@ log-file = "/home/yalcin/.var/log/rustic.log"
 log-level = "info"
 
 [repository]
-repository = "/mnt/backup/rustic/home/"
+repository = "/mnt/backup/rustic/"
 password-file = "/home/yalcin/.rustic_p.txt"
 
 no-cache = true
 
 [backup]
-git-ignore = true
+git-ignore = false
 
 [[backup.snapshots]]
-sources = ["/home"]
+sources = ["/home/yalcin"]
 globs = [
-  "!/home/**/.cache",
-  "!/home/**/.local/share",
-  "!/home/**/.local/state",
-  "!/home/**/.npm",
-  "!/home/**/.yarn",
-  "!/home/**/.cargo/registry",
-  "!/home/**/.cargo/git",
-  "!/home/**/.rustup/update-hashes",
-  "!/home/**/.rustup/toolchains",
-  "!/home/**/.rustup/tmp",
-  "!/home/**/.rustup/downloads",
-  "!/home/**/Downloads",
-  "!/home/**/.asdf/installs",
-  "!/home/**/.asdf/shims",
-  "!/home/**/go",
-  "!/home/**/temp",
-  "!/home/**/.mozilla",
-  "!/home/**/.ghcup",
-  "!/home/**/dotnet",
-  "!/home/**/Games",
-  "!/home/**/.java",
+  "!/home/yalcin/.cache",
+  "!/home/yalcin/.local/share",
+  "!/home/yalcin/.local/state",
+  "!/home/yalcin/.npm",
+  "!/home/yalcin/.yarn",
+  "!/home/yalcin/.cargo/registry",
+  "!/home/yalcin/.cargo/git",
+  "!/home/yalcin/.rustup/update-hashes",
+  "!/home/yalcin/.rustup/toolchains",
+  "!/home/yalcin/.rustup/tmp",
+  "!/home/yalcin/.rustup/downloads",
+  "!/home/yalcin/Downloads",
+  "!/home/yalcin/.asdf/installs",
+  "!/home/yalcin/.asdf/shims",
+  "!/home/yalcin/go",
+  "!/home/yalcin/temp",
+  "!/home/yalcin/.mozilla",
+  "!/home/yalcin/.ghcup",
+  "!/home/yalcin/dotnet",
+  "!/home/yalcin/Games",
+  "!/home/yalcin/.java",
+  "!/home/yalcin/virt",
+  "!/home/yalcin/.config/heroic",
+  "!/home/yalcin/.var/app",
+  "!/home/yalcin/**/.venv",
+  "!/home/yalcin/**/venv",
 ]
 
 [forget]
-keep-hourly = 6
-keep-daily = 30
-keep-weekly = 12
-keep-monthly = 12
-keep-yearly = 2
+keep-hourly = 12
+keep-daily = 7
+keep-weekly = 4
+keep-monthly = 2
+keep-yearly = 1

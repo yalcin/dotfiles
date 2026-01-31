@@ -133,8 +133,17 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH="$PATH:/opt/miniconda3/bin"
-eval "$(zellij setup --generate-auto-start zsh)"
+#eval "$(zellij setup --generate-auto-start zsh)"
 #source $HOME/.config/op/plugins.sh
 alias ls='eza --group-directories-first --icons'
 
 source /home/yalcin/.config/broot/launcher/bash/br
+eval "$(ruby ~/.local/bin/try.rb init ~/kod/tries)"
+
+# bun completions
+[ -s "/home/yalcin/.bun/_bun" ] && source "/home/yalcin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+emulate sh -c '. ~/.profile'
